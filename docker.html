@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial de Docker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        h1, h2, h3 {
+            margin-top: 20px;
+        }
+        section {
+            padding: 20px;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 5px;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tutorial de Docker</h1>
+    </header>
+    <section id="introduccion">
+        <h2>Introducción a Docker</h2>
+        <p>Docker es una plataforma de software que permite a los desarrolladores, administradores de sistemas y otros profesionales, crear, implementar y ejecutar aplicaciones distribuidas de manera eficiente y rápida en diferentes entornos.</p>
+    </section>
+    <section id="correr-contenedor">
+        <h2>Cómo Correr un Contenedor Simple</h2>
+        <p>Para correr un contenedor simple usando Docker, sigue estos pasos:</p>
+        <ol>
+            <li><strong>Paso 1:</strong> Abre tu terminal o línea de comandos.</li>
+            <li><strong>Paso 2:</strong> Ejecuta el siguiente comando para descargar la imagen de ejemplo "hello-world" desde Docker Hub y correr un contenedor basado en esa imagen:</li>
+        </ol>
+        <code>docker run hello-world</code>
+        <p>Este comando buscará la imagen "hello-world" localmente. Si no la encuentra, la descargará desde Docker Hub. Una vez descargada, Docker creará un contenedor a partir de esa imagen y ejecutará el comando definido en la imagen.</p>
+    </section>
+    <section id="verificar-estado">
+        <h2>Cómo Verificar que el Contenedor Está Activo</h2>
+        <p>Después de correr el contenedor, puedes verificar su estado utilizando el siguiente comando:</p>
+        <code>docker ps -a</code>
+        <p>Este comando te mostrará una lista de todos los contenedores en ejecución, así como los que se han detenido recientemente. Si el contenedor "hello-world" está activo, verás una entrada para él en la lista, junto con su ID, nombre, estado, puertos, etc.</p>
+    </section>
+</body>
+</html>
