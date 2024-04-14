@@ -1,11 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menú Copado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #555;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #777;
+        }
+        section {
+            padding: 20px;
+        }
+        .docker {
+            background-color: #f0f0f0;
+        }
+        .github {
+            background-color: #f9f9f9;
+        }
+        .aws {
+            background-color: #fcfcfc;
+        }
+    </style>
 </head>
 <body>
-    <h1>Primeros pasos en Github</h1>
+    <header>
+        <h1>Menú Copado</h1>
+    </header>
+    <nav>
+        <a href="#docker">Docker</a>
+        <a href="#github">GitHub</a>
+        <a href="#aws">AWS</a>
+    </nav>
+    <section id="docker" class="docker">
+        <h2>Docker</h2>
+        <p>Información sobre Docker...</p>
+    </section>
+    <section id="github" class="github">
+        <h2>GitHub</h2>
+        <p>Información sobre GitHub...</p>
+    </section>
+    <section id="aws" class="aws">
+        <h2>AWS</h2>
+        <p>Información sobre AWS...</p>
+    </section>
 </body>
 </html>
